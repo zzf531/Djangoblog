@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block main %}
+    <h2>{{ post.title }}</h2>
+        <span>{{ post.category.name }}&nbsp;&nbsp;{{ post.author }}&nbsp;&nbsp;阅读量</span>
+    <br>
+    <br>
+
+
+    <p>{{ post.body | safe }}</p>
+
+
+{% endblock %}
