@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vp20)2=bm+t_)$30eax&6yx)caf2m0+0aify=3bq_^n$g^5k!a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '106.15.187.113']
 
 
@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'comment',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

@@ -1,5 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE HTML>
+<!-- 这是首页-->
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -47,42 +48,43 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="{% static 'assets/images/cll1.jpg' %}" alt="曾振飞和蔡玲玲" />
+										<img src="{% static 'assets/images/cll2.jpg' %}" alt="曾振飞和蔡玲玲" />
 									</span>
 								</section>
 
-							<!-- Section   部件中间部分-->
+							<!-- Section http://106.15.187.113/admin/blog/post/add/  部件中间部分-->
 								<section>
 									<header class="major">
-										<h2>Erat lacinia 分类</h2>
+                                        <h2>Erat lacinia 分类</h2>
+                                        <a href="http://106.15.187.113/admin/blog/post/add/">发表文章</a>
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-gem"></span>
+                                            <a href="{% url 'blog:post3' %}"><span class="icon fa-gem"></span></a>
 											<div class="content">
-												<h3>社区</h3>
-												<p>18720班共同的社区，相信技术的力量.</p>
+                                                <a href="{% url 'blog:post3' %}"><h3>社区</h3></a>
+												<p>共同的社区，相信技术的力量。</p>
 											</div>
 										</article>
 										<article>
                                             <a href="{% url 'blog:post1' %}"><span class="icon solid fa-paper-plane"></span></a>
 											<div class="content">
-												<h3>前端</h3>
-												<p>从事Web前端开发工作的工程师。主要进行网站开发，优化，完善的工作。网页制作是Web 1.0时代的产物，那时网站的主要内容都是静态的，用户使用网站的行为也以浏览为主.</p>
+                                                <a href="{% url 'blog:post1' %}"><h3>前端</h3></a>
+												<p>主要进行网站开发，优化，完善的工作。</p>
 											</div>
 										</article>
 										<article>
                                             <a href="{% url 'blog:post2' %}"><span class="icon solid fa-rocket"></span></a>
 											<div class="content">
-												<h3>后端</h3>
-												<p>后端开发一般也叫做后台，其负责是网站后台逻辑的设计和实现还有用户及网站的数据的保存和读取。比如一般网站都是有用户注册和登录的，用户的注册的信息通过前端发送给后端，后端将其保存在数据库中。</p>
+                                                <a href="{% url 'blog:post2' %}"><h3>后端</h3></a>
+												<p>后端开发一般也叫做后台。</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon solid fa-signal"></span>
+                                            <a href="{% url 'blog:post4' %}"><span class="icon solid fa-signal"></span></a>
 											<div class="content">
-												<h3>学习</h3>
-												<p>热爱学习，好好学习.</p>
+                                                <a href="{% url 'blog:post4' %}"><h3>分享</h3></a>
+												<p>与他人共同享受。</p>
 											</div>
 										</article>
 									</div>

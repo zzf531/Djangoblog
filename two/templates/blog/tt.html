@@ -34,26 +34,7 @@
 								</header>
 
 							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>所有文章</h1>
-									</header>
-
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-
-									<hr class="major" />
-                                    {% for post in post_list %}
-                                        <a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a>
-                                        <p>{{ post.excerpt }}</p>
-
-                                        <p>作者：{{ post.author }}&nbsp; {{ post.created_time }}</p>
-                                        <hr class="major" />
-                                    {% empty %}
-                                        <div class="no-post">暂时还没有发布的文章！</div>
-                                    {% endfor %}
-
-									<hr class="major" />
-								</section>
+								<section></section>
 						</div>
 					</div>
             </div>

@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-
+from ckeditor.fields import RichTextField
 # 分类
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -21,7 +21,7 @@ class Tag(models.Model):
 # 文章
 class Post(models.Model):
     title = models.CharField(max_length=100) # 标题
-    body = models.TextField()  # 文章主体
+    body = RichTextField()  # 文章主体
     created_time = models.DateTimeField()  # 创建时间
     modified_time = models.DateTimeField()  # 修改时间
 
